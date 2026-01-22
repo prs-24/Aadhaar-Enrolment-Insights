@@ -23,7 +23,7 @@ The solution analyzes enrolment behaviour at **national, state, and district lev
 
 ## 🎯 Problem Statement
 
-> Identify meaningful **patterns, trends, anomalies, or predictive indicators** and translate them into **clear insights or solution frameworks** that can support informed decision-making and operational improvements.
+> Identify meaningful **patterns, trends, anomalies, or predictive indicators** and translate them into **clear insights or solution frameworks** that support informed decision-making and operational improvements.
 
 ---
 
@@ -47,12 +47,12 @@ The solution analyzes enrolment behaviour at **national, state, and district lev
 
 ## 🛠 Methodology
 
-✔ Data cleaning & preprocessing (date standardization, missing value handling)  
-✔ Feature engineering to compute total enrolments and monthly aggregates  
-✔ Exploratory Data Analysis (EDA) for growth trends and saturation signals  
+✔ Data cleaning & preprocessing (date standardization, missing values)  
+✔ Feature engineering for total enrolments and monthly aggregation  
+✔ Exploratory Data Analysis (EDA) to study growth trends and saturation signals  
 ✔ Age group analysis to assess Aadhaar ecosystem maturity  
 ✔ Time-series forecasting using **Prophet**  
-✔ Visual anomaly identification through trend deviations  
+✔ Visual anomaly detection through trend deviations  
 ✔ Export of analysis-ready datasets for dashboarding and reporting  
 
 ---
@@ -60,23 +60,23 @@ The solution analyzes enrolment behaviour at **national, state, and district lev
 ## 🔍 Key Analysis Components
 
 ### 🇮🇳 National-Level Analysis
-- Aadhaar enrolment growth versus saturation
+- Aadhaar enrolment growth vs saturation
 - Seasonal and event-driven enrolment patterns
 - Short-term enrolment demand forecasting (3–6 months)
 
 ### 🗺 State-Level Analysis
 - Identification of consistently high contributing states
-- Comparison of enrolment behavior across states
+- State-wise enrolment comparison
 - State-wise forecasting using Prophet
-- Growth versus volume-based resource planning
+- Growth vs volume-based resource planning
 
 ### 🏙 District-Level Analysis
 - Top performing districts with high Aadhaar activity
 - Lagging districts with low enrolment volumes
-- Identification of potential infrastructure or administrative gaps
+- Identification of infrastructure or administrative gaps
 
 ### ⚠ Anomaly & Operational Insights
-- Detection of sudden spikes and dips in enrolment activity
+- Sudden spikes and dips in enrolment activity
 - Interpretation of anomalies using policy, administrative, and seasonal context
 - Support for proactive monitoring and planning
 
@@ -85,13 +85,13 @@ The solution analyzes enrolment behaviour at **national, state, and district lev
 ## 📊 Key Visual Outputs (Interactive)
 
 📈 **National Aadhaar Enrolment Growth Trend**  
-👉 [View Interactive Graph](outputs/graphs/national_growth_trend.html)
+👉 [View Interactive Graph](https://raw.githubusercontent.com/prs-24/Aadhaar-Enrolment-Insights/main/outputs/graphs/national_growth_trend.html)
 
 📉 **Expected Aadhaar Enrolment Demand (Next 3–6 Months)**  
-👉 [View Interactive Forecast](outputs/graphs/national_enrolment_forecast.html)
+👉 [View Interactive Forecast](https://raw.githubusercontent.com/prs-24/Aadhaar-Enrolment-Insights/main/outputs/graphs/national_enrolment_forecast.html)
 
 📊 **Age-wise Aadhaar Enrolment Distribution**  
-👉 [View Interactive Chart](outputs/graphs/age_wise_enrolment.html)
+👉 [View Interactive Chart](https://raw.githubusercontent.com/prs-24/Aadhaar-Enrolment-Insights/main/outputs/graphs/age_wise_enrolment.html)
 
 > 💡 All visualizations are **interactive Plotly dashboards** (hover, zoom, pan supported)
 
@@ -119,69 +119,3 @@ Aadhaar-Enrolment-Insights/
 ├── README.md
 ├── requirements.txt
 └── .gitignore
-
-
----
-
-## 📦 Output Artifacts
-
-The project generates **dashboard-ready datasets**, including:
-
-- National monthly enrolment trends  
-- National enrolment demand forecasts  
-- State-level monthly enrolment data  
-- State-wise forecasts  
-- District-level summaries  
-- Age group distribution analysis  
-- Anomaly indicators  
-
-These outputs can be directly consumed in **Power BI**, Tableau, or other visualization tools.
-
----
-
-## 🧩 Use Cases
-
-- UIDAI enrolment resource allocation planning  
-- Infrastructure and capacity optimization  
-- Identification of high-growth and saturation regions  
-- Monitoring of operational irregularities  
-- Evidence-based policy evaluation  
-
----
-
-## ▶ How to Run the Project
-
-1️⃣ Clone the repository  
-```bash
-git clone https://github.com/prs-24/Aadhaar-Enrolment-Insights.git```
-
-2️⃣ Place UIDAI enrolment CSV files in the data/ directory
-
-3️⃣ Run the Jupyter notebooks or Python scripts
-
-4️⃣ Open interactive HTML graphs from outputs/graphs/
-
-5️⃣ Upload generated CSV outputs into Power BI / BI tools for dashboards
-🔮 Future Scope
-
-Automated statistical anomaly detection models
-
-District-level forecasting models
-
-Integration with real-time enrolment data feeds
-
-Interactive public-facing dashboards
-
-👥 Contributors
-
-prs-24— national Data Analysis
-🔗 https://github.com/prs-24
-
-Apurva FX — Lead data analyst& forecasting
-🔗 https://github.com/apurvafx/apurvafx
-
-Aashish Chandr — Research Support & Analysis
-🔗 https://github.com/Aashish-Chandr
-
-⭐ If you find this project insightful, consider giving it a star on GitHub!
-
